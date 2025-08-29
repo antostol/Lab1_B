@@ -14,7 +14,18 @@ public class PassFailActivity extends GradedActivity {
         this.minPassingScore = mps;
     }
     
-    public char getGrade() {}
+    @Override
+    public char getGrade() {
+        if (this.getScore() >= minPassingScore) return 'P';
+        return 'F';
+    }
+
+    @Override
+    public String toString() {
+        return "What is the minimum passing score? " + this.minPassingScore + "\n"
+                + "The exam score is " this.getScore() + 
+                + "The exam grade is " + getGrade();
+    }
     
     
 }

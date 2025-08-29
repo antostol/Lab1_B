@@ -17,7 +17,12 @@ public class FinalExam extends GradedActivity {
         this.numMissed = missed;
     }
     
-    public double getPointsEach() {}
+    public double getPointsEach() {
+        pointsEach = 100.0 / numQuestions;
+        double numericScore = 100.0 - (numMissed * pointsEach);
+        setScore(numericScore);
+        return pointsEach;
+    }
     
     public int getNumMissed() {}
     

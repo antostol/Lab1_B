@@ -13,7 +13,7 @@ public class Essay extends GradedActivity {
     private double correctLength;
     private double content;
 
-    public void (double gr, double sp, do)
+    public void setScore(double gr, double sp, double len, double cnt) {}
     
     public double getGrammar() {
         return grammar;
@@ -46,7 +46,10 @@ public class Essay extends GradedActivity {
     public void setContent(double content) {
         this.content = content;
     }
-    
-    
-    
+
+    @Override
+    public String toString() {
+        return "Total points: " + super.getScore() + "\n"
+                + "Grade: " + super.getGrade();
+    }    
 }

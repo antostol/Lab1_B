@@ -23,7 +23,7 @@ public class PassFailActivity extends GradedActivity {
     @Override
     public String toString() {
         return "What is the minimum passing score? " + this.minPassingScore + "\n"
-                + "The exam score is " this.getScore() + 
+                + "The exam score is " + this.getScore() 
                 + "The exam grade is " + getGrade();
     }
     

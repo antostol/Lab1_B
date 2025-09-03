@@ -34,6 +34,4 @@ public class FinalExam extends GradedActivity {
                 + "The exam score is " + this.getScore() + "/n"
                 + "The exam grade is " + this.getGrade();
     }
-    
-    
 }

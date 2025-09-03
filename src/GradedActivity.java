@@ -18,5 +18,21 @@ public class GradedActivity {
         this.score = score;
     }
     
-    public char getGrade() {}
+    public char getGrade() {
+        if (score >= 90) {
+            return 'A';
+        }
+        if (score >= 90) {
+            return 'B';
+        }
+        if (score >= 90) {
+            return 'C';
+        }
+        if (score >= 90) {
+            return 'D';
+        } else {
+            return 'E';
+        }
+    }
+    
 }

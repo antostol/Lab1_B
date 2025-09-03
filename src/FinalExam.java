@@ -23,8 +23,17 @@ public class FinalExam extends GradedActivity {
         setScore(numericScore);
         return pointsEach;
     }
-    
-    public int getNumMissed() {}
+
+    public int getNumMissed() {
+        return numMissed;
+    }
+
+    @Override
+    public String toString() {
+        return "Each question counts for " + pointsEach + " points./n"
+                + "The exam score is " + this.getScore() + "/n"
+                + "The exam grade is " + this.getGrade();
+    }
     
     
 }

@@ -28,8 +28,8 @@ public class PassFailExam extends PassFailActivity {
 
     @Override
     public String toString() {
-        return "Each question counts " + this.getPointsEach() + " points./n"
-                + "The exam score is " + this.getScore() + "/n"
+        return "Each question counts " + this.getPointsEach() + " points.\n"
+                + "The exam score is " + this.getScore() + "\n"
                 + "The exam grade is " + this.getGrade();
     }
 }

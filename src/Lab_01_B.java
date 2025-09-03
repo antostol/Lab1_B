@@ -7,6 +7,7 @@ import java.util.*;
  *
  * @author Nagat
  */
+// link for git repository: https://github.com/antostol/Lab1_B
 public class Lab_01_B {
 
     /**
@@ -16,14 +17,14 @@ public class Lab_01_B {
         // TODO code application logic here
         System.out.println("Step 2: ");
         Scanner input = new Scanner(System.in);
-        System.out.print("How many quetions are on the final exam? ");
+        System.out.print("How many questions are on the final exam? ");
         int questions = input.nextInt();
         System.out.print("How many questions did the student miss? ");
         int missed = input.nextInt();
         System.out.println(new FinalExam(questions,missed));
         
         System.out.println("\nStep 3: ");
-        System.out.print("How many quetions are on the final exam? ");
+        System.out.print("How many questions are on the final exam? ");
         questions = input.nextInt();
         System.out.print("How many questions did the student miss? ");
         missed = input.nextInt();
